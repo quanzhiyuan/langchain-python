@@ -5,8 +5,8 @@ from langchain_core.prompts import ChatPromptTemplate
 from config import OPENAI_API_KEY, OPENAI_API_BASE, OPENAI_MODEL
 
 # 检查 API 密钥是否设置
-if not OPENAI_API_KEY:
-    raise ValueError("请设置 OPENAI_API_KEY 环境变量或在 .env 文件中配置。您需要购买自己的 OpenAI API 密钥。")
+if not OPENAI_API_KEY or OPENAI_API_KEY == "your_api_key_here":
+    raise ValueError("请在 config.py 文件中设置您的 OPENAI_API_KEY。您需要购买自己的 OpenAI API 密钥。")
 
 # 系统提示模板
 sys_template = "Translate the following into {language}:"

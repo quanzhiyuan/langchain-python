@@ -31,15 +31,12 @@
 
 ## 配置
 
-1. 复制 `config.py.example` 文件并重命名为 `config.py`：
-   ```
-   cp config.py.example config.py
-   ```
+1. 打开 `config.py` 文件。
 
 2. 在 `config.py` 文件中设置您的 OpenAI API 密钥和其他配置：
    ```python
-   OPENAI_API_KEY = "your_api_key_here"
-   OPENAI_API_BASE = "https://api.openai.com/v1"  # 或其他自定义 API 基础 URL
+   OPENAI_API_KEY = "your_api_key_here"  # 替换为您的实际 API 密钥
+   OPENAI_API_BASE = "https://api.bianxie.ai/v1"  # 或其他自定义 API 基础 URL
    ```
 
 3. 确保 `config.py` 文件已添加到 `.gitignore` 中，以避免将敏感信息提交到版本控制系统。
@@ -48,7 +45,7 @@
 
 ## 使用方法
 
-在设置好配置文件后，您可以运行 `myopenai.py` 来测试基本功能：
+在设置好 `config.py` 文件后，您可以运行 `myopenai.py` 来测试基本功能：
 
 ## 配置
 
