@@ -3,7 +3,9 @@ from langchain_openai import ChatOpenAI
 from langchain_core.output_parsers import StrOutputParser
 from langchain_core.prompts import ChatPromptTemplate
 from config import OPENAI_API_KEY, OPENAI_API_BASE, OPENAI_MODEL
+import logging
 
+logging.info('infor:', OPENAI_API_KEY)
 # 检查 API 密钥是否设置
 if not OPENAI_API_KEY or OPENAI_API_KEY == "your_api_key_here":
     raise ValueError("请在 config.py 文件中设置您的 OPENAI_API_KEY。您需要购买自己的 OpenAI API 密钥。")
